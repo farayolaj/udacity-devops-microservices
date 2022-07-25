@@ -5,11 +5,13 @@
 
 # Step 1:
 # Create dockerpath
-# dockerpath=<your docker ID/path>
+dockerpath=farayolaj/housing-prediction
 
 # Step 2:  
 # Authenticate & tag
+docker login -u farayolaj
 echo "Docker ID and Image: $dockerpath"
 
 # Step 3:
 # Push image to a docker repository
+docker push farayolaj/housing-prediction
