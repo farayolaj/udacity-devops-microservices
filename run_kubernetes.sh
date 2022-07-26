@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
 
-# Use to recognize kubectl alias when using minikube
-shopt -s expand_aliases
-source ~/.bashrc
-
 # This tags and uploads an image to Docker Hub
 
 # Step 1:
