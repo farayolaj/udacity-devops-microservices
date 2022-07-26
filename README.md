@@ -28,3 +28,15 @@ In this project, you will apply the skills you have acquired in this course to o
 
 1. Make sure the app is running as outlined in [Running `app.py`](#running-apppy).
 2. Run `./make_prediction.sh` to make a request to the API.s
+
+### File Explanation
+* `.circleci/config.yml`: This file contains the CircleCI workflow definitions.
+* `model_data/`: This file contains the ML model for the prediction.
+* `output_txt_files/`: This directory contains the results of running `run_docker.sh` and `run_kubernetes.sh`.
+* `app.py`: The python web API that uses the ML model to predict housing prices.
+* `make_prediction.sh`: A script to make a sample request to the API.
+* `Makefile`: A makefile to script common operations.
+* `requirements.txt`: A list of Python dependencies used by `app.py`
+* `run_docker.sh`: A script that deploys and runs the app using docker.
+* `run_kubernetes.sh`: A script that deploys and runs the app using kubernetes.
+* `upload_docker.sh`: A script to push the docker image to Dockerhub.
